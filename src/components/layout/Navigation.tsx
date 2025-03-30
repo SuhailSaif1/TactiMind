@@ -5,7 +5,7 @@ import {
   BarChart3, 
   Users, 
   Activity, 
-  ChessKnight,
+  Shuffle, 
   Settings,
   Menu,
   X
@@ -22,7 +22,7 @@ const navItems = [
   {
     name: "Match Analysis",
     path: "/match-analysis",
-    icon: ChessKnight,
+    icon: Shuffle,
   },
   {
     name: "Player Health",
