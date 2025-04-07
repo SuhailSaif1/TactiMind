@@ -1,3 +1,4 @@
+import React from "react";
 import { 
   Video, 
   Brain, 
@@ -9,7 +10,18 @@ import {
   LayoutDashboard 
 } from "lucide-react";
 
-export const systemComponents = [
+type ComponentType = "input" | "processing" | "model" | "output" | "dashboard";
+
+interface SystemComponent {
+  id: string;
+  title: string;
+  description: string;
+  type: ComponentType;
+  icon: React.ReactNode;
+  details: string;
+}
+
+export const systemComponents: SystemComponent[] = [
   {
     id: "raw-video",
     title: "Raw Match Video",
